@@ -22,7 +22,6 @@ public class IgnoreCommand implements BlabberCommand {
 		this.username = username;
 	}
 
-	// comment changes
 	@Override
 	public void execute(String blabberUsername) {
 		String sqlQuery = "DELETE FROM listeners WHERE blabber=? AND listener=?;";
