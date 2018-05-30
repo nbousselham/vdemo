@@ -33,7 +33,6 @@ import com.veracode.verademo.utils.Constants;
 public class BlabController {
 	private static final Logger logger = LogManager.getLogger("VeraDemo:BlabController");
 	
-	// adding some code to my program
 
 	private final String sqlBlabsByMe = "SELECT blabs.content, blabs.timestamp, COUNT(comments.blabber), blabs.blabid "
 			+ "FROM blabs LEFT JOIN comments ON blabs.blabid = comments.blabid "
